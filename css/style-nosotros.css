@@ -1,0 +1,16 @@
+
+.image-hero{
+    position: relative;
+    background-image: url(../images/imagenprincipal.jpg);
+    width: 100vw;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulo {
+    position: absolute;
+    width: 40%;
+    margin-top: 20vh;
+    margin-left: 5rem;
+}
