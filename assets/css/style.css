@@ -1,0 +1,37 @@
+/* Estilos Generales */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos Navbar */
+
+
+
+/* Estilos Header */
+
+
+
+/* Estilos Body */
+
+.imagen1 {
+    position: relative;
+    
+}
+
+.img-base {
+    position: relative;
+}
+.img-concepto {
+    position: absolute;
+}
+
+.texto-contacto {
+    position: absolute;
+    top: 40%!important;  
+}
+/* Estilos Footer */
+
