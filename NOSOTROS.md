@@ -2,6 +2,6 @@
 
 Integrantes:
 * Guillermo García
-* Luis Vargas
+* Luis Vasquez
 * Matías Fuentealba
 * Emmanuel Nieto
