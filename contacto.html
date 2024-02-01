@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Contacto</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            width: 300px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    
+
+<form id="contactForm">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" required>
+
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <button type="button" onclick="enviarFormulario()">Enviar</button>
+</form>
+
+<script>
+    function enviarFormulario() {
+        const nombre = document.getElementById('nombre').value;
+        const apellido = document.getElementById('apellido').value;
+        const telefono = document.getElementById('telefono').value;
+        const correo = document.getElementById('correo').value;
+
+        const formData = new FormData();
+        formData.append('nombre', nombre);
+        formData.append('apellido', apellido);
+        formData.append('telefono', telefono);
+        formData.append('correo', correo);
+
+        fetch('https://script.google.com/macros/s/AKfycbzzA1lLB5q9jGP4ye3fntI-vsXCs9mCaqQF81jyUz4aIc75kdKcaEtK33zwNlH0vPsuJw/exec', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.result === 'success') {
+                alert('¡Formulario enviado con éxito!');
+            } else {
+                alert('Error al enviar el formulario. Por favor, inténtalo de nuevo.');
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    }
+</script>
+
 </body>
 </html>
+
