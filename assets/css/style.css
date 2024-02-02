@@ -5,6 +5,11 @@ body {
     padding: 0;
     overflow: auto;
     font-family: 'Montserrat', sans-serif;
+<<<<<<< HEAD
+=======
+    font-size: 16px;
+    background-color: #eee;
+>>>>>>> e15b3d6443b5e2cd6eeb330c6c090e9b9f010b1c
 }
 
 /* Estilos Navbar */
@@ -17,7 +22,196 @@ body {
 
 /* Estilos Body */
 
+<<<<<<< HEAD
 .imagen1 {
+=======
+/* Estilos Luis */
+
+.contenido {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+}
+
+.elemento {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+
+.imagen-atractiva {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al hacer hover */
+}
+
+.imagen-atractiva:hover {
+    transform: scale(1.1); /* Escala la imagen al hacer hover */
+}
+
+/* Estilos Luis */
+
+/* Estilos Alonso */
+.card {
+    border-radius: 20px;
+    width: 370px;
+    background-color: #000000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+}
+
+.card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.card__thumb {
+    height: 245px;
+    overflow: hidden;
+    background-color: #000;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.card__thumb img {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.card:hover .card__thumb {
+    height: 130px;
+}
+
+.card:hover .card__thumb img {
+    opacity: 0.6;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.card__body {
+    position: relative;
+    height: 185px;
+    padding: 20px;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.card:hover .card__body {
+    height: 300px;
+}
+
+.card__category {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    height: 25px;
+    padding: 0 15px;
+    background-color: rgb(130, 222, 203);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 25px;
+}
+
+.card__title {
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card__subtitle {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 19px;
+    color: coral;
+}
+
+.card__description {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 56px;
+    margin: 0;
+    padding: 0;
+    color: #666C74;
+    line-height: 27px;
+    opacity: 0;
+    -webkit-transform: translateY(45px);
+    transform: translateY(45px);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.card:hover .card__description {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.card__footer {
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+    right: 20px;
+    font-size: 11px;
+    color: #A3A9A2;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 0 0 2px;
+    font-size: 18px;
+}
+
+.icon+.icon {
+    padding-left: 10px;
+}
+/* Estilos Alonso */
+
+/* Estilos Eliana */
+
+.section {
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .section__image {
+    margin-right: 20px;
+  }
+
+  .section__text {
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .imagen1 {
+>>>>>>> e15b3d6443b5e2cd6eeb330c6c090e9b9f010b1c
     position: relative;
     
 }
@@ -33,5 +227,48 @@ body {
     position: absolute;
     top: 40%!important;  
 }
+<<<<<<< HEAD
 /* Estilos Footer */
 
+=======
+
+/* Estilos Eliana */
+
+/* Estilos Footer */
+
+a {
+    text-decoration: none !important;
+    color: #ffffff !important;
+  }
+  a:hover{
+    text-decoration: none !important;
+    color: #4ebfe5 !important;
+  }
+  b{
+    font-weight: 900;
+  }
+.f-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-800 {
+    font-weight: 800;
+}
+
+.blanco {
+    color: #ffffff;
+}
+
+>>>>>>> e15b3d6443b5e2cd6eeb330c6c090e9b9f010b1c
