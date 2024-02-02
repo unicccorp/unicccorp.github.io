@@ -192,33 +192,37 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
-  }
+}
 
-  .section__image {
+.section__image {
     margin-right: 20px;
-  }
+}
 
-  .section__text {
+.section__text {
     font-family: Montserrat;
     font-size: 16px;
     line-height: 1.5;
-  }
+}
 
-  .imagen1 {
+.imagen1 {
     position: relative;
-    
+
 }
 
 .img-base {
     position: relative;
+    left: 10%;
 }
+
 .img-concepto {
     position: absolute;
 }
 
 .texto-contacto {
     position: absolute;
-    top: 40%!important;  
+    top: 30% !important;
+    max-width: 50%;
+    left: 25%;
 }
 
 /* Estilos Eliana */
