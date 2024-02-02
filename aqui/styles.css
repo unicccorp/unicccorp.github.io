@@ -1,0 +1,24 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+}
+
+.elemento {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+
+.imagen-atractiva {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al hacer hover */
+}
+
+.imagen-atractiva:hover {
+    transform: scale(1.1); /* Escala la imagen al hacer hover */
+}
