@@ -19,11 +19,19 @@ body {
 
 /* Estilos Body */
 
+
 /* Estilos Luis */
 
-.contenido {
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
     display: flex;
-    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+    justify-content: space-between; 
+    position: relative;/* Distribuye los elementos de manera uniforme */
+    width: fit-content;
+    display: flexbox; /* Cambiado a inline-block */
 }
 
 .elemento {
@@ -42,7 +50,22 @@ body {
     transform: scale(1.1); /* Escala la imagen al hacer hover */
 }
 
-/* Estilos Luis */
+
+
+.texto-superpuesto {
+    position: absolute;
+    display: inline-flex;
+    bottom: 80px; /* Ajusta la posición verticalmente según necesites */
+    left: 35px; /* Ajusta la posición horizontalmente según necesites */
+    color: rgb(3, 3, 3);
+    font-size: 15px; /* Tamaño del texto */
+}
+
+.imagen-superpuesta {
+    width: 100%; /* Cambiado a 100% */
+    height: auto; /* Cambiado a auto */
+    display: flexbox; /* Ajuste para alinear correctamente la imagen */
+}
 
 /* Estilos Alonso */
 .card {
