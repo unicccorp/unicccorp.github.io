@@ -1,128 +1,171 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+<head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <title>Formulario a Google Sheets</title>
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        nav img {
+            max-width: 50px;
+            margin-right: 15px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            nav img {
+                margin: 5px 0;
+            }
+        }
+
+        form {
+            width: 100%;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 7px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #DEDEDE;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 20%;
+            border-radius: 10px;
+        }
+
         .contenedor {
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         }
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
 
-     form {
-         width: 300px;
-         text-align: center;
-     }
+        .contenedor2 {
+            display: flex;
+        }
+git
+        .contenedor3 {
+            display: flex;
+            flex-direction: column;
+            padding: 8px;
+            margin-bottom: 7px;
+        }
 
-     label {
-         display: block;
-         margin-bottom: 10px;
-         
-     }
+        .left, .right {
+            flex: 1;
+            padding: 20px;
+        }
 
-     input {
-         width: 100%;
-         padding: 8px;
-         margin-left: 10px;
-         margin-right: 10px;
-         margin-bottom: 7px;
-         box-sizing: border-box;
-         border-radius: 10px
-     }
+        .h2 {
+            font-family: 'Montserrat', sans-serif;
+        }
 
-     button {
-         background-color: #DEDEDE  ;
-         color: white;
-         padding: 10px;
-         border: none;
-         cursor: pointer;
-         width: 20%;
-         border-radius: 10px
-     }
+    </style>
+</head>
+<body>
 
-     .contenedor2 {
-         display: flex;
-     }
+<nav>
+    <div class="contenedor">
+        <img src="tu_logo.png" alt="Logo">
+        <div>
+            <a href="#" style="margin-left: auto;align-items: end;">Home</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Team</a>
+            <a href="#">Contactos</a>
+        </div>
+    </div>
+</nav>
 
-     .contenedor3 {
-         display: flex;
-         padding: 8px;
-         margin-bottom: 7px;
-     }
+<section>
+    <div class="contenedor">
+        <div class="left">
+            <h2 class="h2">
+                Contactanos dejando tus datos en el formulario y pronte te llamaremos
+            </h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti laboriosam veniam temporibus odio cum rerum provident! Repellendus maiores quisquam itaque nulla. Laboriosam magnam saepe explicabo quo facilis veritatis, soluta numquam?
+            </p>
+        </div>
 
-     .left, .right {
-         flex: 1; /* Hace que ambos divs tomen el mismo espacio */
-        padding: 20px;
-     }
-
-     .left {
-        background-color:   #ffffff;
-     }
-
-     .right {
-        background-color: #ffffff    ;
-     }
-
-     @media(max-width: 769px) {
-         .contenedor {
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-         }
-     }
-
-     .h2 {
-        font-family: 'Montserrat', sans-serif;
-
-     }
-
- </style>
-
-  </head>
-
-  <body>
-
-    
-    <section>
-        <div class="contenedor">
-            <div class="left">
-
-                <h2></style>
-                    Contactanos dejando tus datos en el formulario y pronte te llamaremos
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti laboriosam veniam temporibus odio cum rerum provident! Repellendus maiores quisquam itaque nulla. Laboriosam magnam saepe explicabo quo facilis veritatis, soluta numquam?
-                </p>
-            </div>
-
-            <div style="padding-right: 20px;" class="right">
-                <form id="myForm" action="https://script.google.com/macros/s/AKfycbzzA1lLB5q9jGP4ye3fntI-vsXCs9mCaqQF81jyUz4aIc75kdKcaEtK33zwNlH0vPsuJw/exec" method="post">
-                    <div class="contenedor2">
+        <div style="padding-right: 20px;" class="right">
+            <form id="myForm" action="https://script.google.com/macros/s/AKfycbzzA1lLB5q9jGP4ye3fntI-vsXCs9mCaqQF81jyUz4aIc75kdKcaEtK33zwNlH0vPsuJw/exec" method="post">
+                <div class="contenedor2">
+                    <div class="contenedor3">
+                        <label for="nombre">Nombre</label>
                         <input type="text" name="nombre" placeholder="Nombre" required>
-                        <input type="text" name="apellido" placeholder="Apellido" required>
-                    </div>
-
-                    <div class="contenedor2">
-                        <input type="tel" name="telefono" placeholder="Telefono" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div  class="contenedor3">
-                        <textarea style="border-radius: 10px; width: 100%;" name="mensaje" placeholder="Mensaje"></textarea>
                     </div>
                     <div class="contenedor3">
-                        <button type="submit">Enviar</button>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name="apellido" placeholder="Apellido" required>
                     </div>
-                </form>
-            </div>
+                </div>
 
+                <div class="contenedor2">
+                    <div class="contenedor3">
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" name="telefono" placeholder="Telefono" required>
+                    </div>
+                    <div class="contenedor3">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
 
+                <div class="contenedor3">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea style="border-radius: 10px; width: 100%;" name="mensaje" placeholder="Mensaje"></textarea>
+                </div>
+                <div class="contenedor3" style="align-items: center;">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
-    
-  </body>
+</body>
 </html>
+
