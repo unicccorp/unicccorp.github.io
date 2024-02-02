@@ -253,6 +253,7 @@ body {
 
 .img-base {
     position: relative;
+    left: 10%;
 }
 
 .img-concepto {
@@ -261,7 +262,13 @@ body {
 
 .texto-contacto {
     position: absolute;
+<<<<<<< HEAD
     top: 40% !important;
+=======
+    top: 30% !important;
+    max-width: 50%;
+    left: 25%;
+>>>>>>> 1a153ac000cf4a80b61a4d264045bb3e76266719
 }
 
 /* Estilos Eliana */
