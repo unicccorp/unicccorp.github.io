@@ -1,102 +1,120 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario a Google Sheets</title>
 
     <style>
-
-        form {
-            width: 300px;
-            text-align: center;
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        label {
-            display: block;
+        section {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .contenedor2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .contenedor2 > div {
+            width: 100%;
+            box-sizing: border-box;
             margin-bottom: 10px;
         }
 
-        input {
+        .name label,
+        .contact-info label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .name input,
+        .contact-info input,
+        textarea {
             width: 100%;
             padding: 8px;
-            margin: 15px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
+            margin: 5px 0;
+        }
+
+        form {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
         }
 
         button {
             background-color: #724caf;
             color: white;
-            padding: 10px;
+            padding: 5px;
             border: none;
             cursor: pointer;
-            width: 50%;
-        }
-
-        .contenedor2 {
-            display: flex;
-            align-items: center;
-        }
-
-    
-
-        .contenedor2 > * {
-            flex: 1;
-        }
-
-        .mensaje {
-            display: flex;
             width: 100%;
-            padding: 20px;
         }
 
-
-      
-
+        @media only screen and (min-width: 751px) {
+            .contenedor2 > div {
+                width: calc(50% - 20px);
+                margin-bottom: 0;
+            }
+        }
     </style>
 
-  </head>
-  <body>
+</head>
+<body>
 
-    
+<section id="Contact">
+    <div class="contenedor2">
 
-    <section>
-        <div class="contenedor2">
-
-            <div class="left">
-                <h2>
-                    Contactanos dejando tus datos en el formulario y pronte te llamaremos
-                </h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti laboriosam veniam temporibus odio cum rerum provident! Repellendus maiores quisquam itaque nulla. Laboriosam magnam saepe explicabo quo facilis veritatis, soluta numquam?
-                </p>
-            </div>
-
-            <div class="contenedor2">
-                <form id="myForm" action="https://script.google.com/macros/s/AKfycbzzA1lLB5q9jGP4ye3fntI-vsXCs9mCaqQF81jyUz4aIc75kdKcaEtK33zwNlH0vPsuJw/exec" method="post">
-                    
-                    <div class="contenedor2">
-                        <input type="text" name="nombre" placeholder="Nombre" required>
-              
-                        <input type="text" name="apellido" placeholder="Apellido" required>
-                    </div>
-
-                    <div class="contenedor2">
-                        <input type="tel" name="telefono" placeholder="Telefono" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-
-                    <div class="mensaje">
-                        <textarea style="width: 100%; margin: 20px;" name="mensaje" placeholder="Mensaje"></textarea>
-                    </div>
-
-                    <button type="submit">Enviar</button>
-                  </form>
-            </div>
-
-
+        <div>
+            <h2>Contactanos dejando tus datos en el formulario y pronto te llamaremos</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti laboriosam veniam temporibus odio cum rerum provident! Repellendus maiores quisquam itaque nulla. Laboriosam magnam saepe explicabo quo facilis veritatis, soluta numquam?</p>
         </div>
-    </section>
 
-    
-  </body>
+        <div>
+            
+            <form id="myForm" action="https://script.google.com/macros/s/AKfycbzzA1lLB5q9jGP4ye3fntI-vsXCs9mCaqQF81jyUz4aIc75kdKcaEtK33zwNlH0vPsuJw/exec" method="post">
+        
+                <div class="name">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" required>
+                </div>
+
+                <div class="name">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" required>
+                </div>
+
+                <div class="contact-info">
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" name="telefono" required>
+                </div>
+
+                <div class="contact-info">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+</body>
 </html>
+
