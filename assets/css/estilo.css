@@ -1,0 +1,95 @@
+body {   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: auto;
+    margin: 0;
+    background: rgb(0,60,94);
+    background: linear-gradient(124deg, rgba(0,60,94,1) 0%, rgba(4,27,41,1) 100%);
+}
+
+.blacks {  
+    background: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.lifo {
+    color: white;
+    list-style: none;
+}
+
+.lota1 {
+    width: 304px;
+    margin-top: 3%;
+    margin-left: 35px;
+    margin-bottom: 1%;
+    object-fit: contain;
+}
+
+.lota2 {
+    width: 152px; 
+    margin-top: 3%;
+    margin-left: 35px;
+    margin-bottom: 1%;
+}
+
+ul {
+    margin-top: 0px;
+    margin-bottom: 3%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Añadido para que el pseudo-elemento sea posicionado correctamente */
+    padding: 10px;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(254,253,255);
+    background: linear-gradient(90deg, rgba(254,253,255,1) 0%, rgba(255,255,255,1) 37%, rgba(219,219,236,1) 46%, rgba(159,159,193,1) 95%);
+    z-index: -1;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s;
+}
+
+.nav-list a:hover {
+    background: #ddd;
+}
+
+.content {
+    padding: 20px;
+}
+
+#lena {
+    color: white;
+}
+
+.cuadrada {
+    width: 100%;
+}
