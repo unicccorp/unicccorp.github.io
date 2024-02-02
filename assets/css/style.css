@@ -5,11 +5,8 @@ body {
     padding: 0;
     overflow: auto;
     font-family: 'Montserrat', sans-serif;
-<<<<<<< HEAD
-=======
     font-size: 16px;
     background-color: #eee;
->>>>>>> e15b3d6443b5e2cd6eeb330c6c090e9b9f010b1c
 }
 
 /* Estilos Navbar */
@@ -22,9 +19,6 @@ body {
 
 /* Estilos Body */
 
-<<<<<<< HEAD
-.imagen1 {
-=======
 /* Estilos Luis */
 
 .contenido {
@@ -211,7 +205,6 @@ body {
   }
 
   .imagen1 {
->>>>>>> e15b3d6443b5e2cd6eeb330c6c090e9b9f010b1c
     position: relative;
     
 }
@@ -227,10 +220,6 @@ body {
     position: absolute;
     top: 40%!important;  
 }
-<<<<<<< HEAD
-/* Estilos Footer */
-
-=======
 
 /* Estilos Eliana */
 
@@ -271,4 +260,3 @@ a {
     color: #ffffff;
 }
 
->>>>>>> e15b3d6443b5e2cd6eeb330c6c090e9b9f010b1c
