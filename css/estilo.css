@@ -4,3 +4,39 @@ body {
     background-size: cover;
     background-position: auto;
 }
+.navbar {
+    background-color: #333; /* color de fondo del navbar */
+    padding: 10px;
+}
+
+.logo {
+    width: 100px; /* ajusta el tamaño de la imagen del logo según sea necesario */
+}
+
+.nav-list {
+    list-style-type: none; /* elimina los puntos de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 20px; /* ajusta el espacio alrededor del texto del enlace */
+    color: #fff; /* color del texto del enlace */
+    text-decoration: none; /* quita el subrayado del texto del enlace */
+    background-size: contain; /* para asegurarte de que la imagen de fondo se ajuste al tamaño del elemento */
+}
+
+/* Asigna las imágenes de fondo a los enlaces según el ID del enlace */
+#inicio {
+    background-image: url(../assets/img/solo\ sin\ fondo.png);
+}
+#servicios {
+    background-image: url(../assets/img/Subtract.png);
+}
+#acerca {
+    background-image: url(../assets/img/Subtract-1.png);
+}
+#contacto {
+    background-image: url(../assets/img/Subtract-2.png);
+}
